@@ -61,6 +61,10 @@ URL_PATH = ''
 SOCIAL_AUTH_STRATEGY = 'social.strategies.django_strategy.DjangoStrategy'
 SOCIAL_AUTH_STORAGE = 'social.apps.django_app.default.models.DjangoStorage'
 
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'CLIENT_ID'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "CLIENT_SECRET"
+SOCIAL_AUTH_GOOGLE_OAUTH2_AUTH_EXTRA_ARGUMENTS = {'hd': 'andrew.cmu.edu'}
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
