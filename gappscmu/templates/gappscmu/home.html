@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OAuth Example - Google Apps @ CMU</title>
+  </head>
+  <body>
+    <!-- This is the URL that is defined by python-social-auth, which we include
+      in config/urls.py -->
+      {% if user.is_authenticated %}
+        <p>Logged in as {{ user.username }}!</p>
+      {% else %}
+        <a href="/login/google-oauth2">Login with Google Apps @ CMU</a>
+      {% endif%}
+  </body>
+</html>
