@@ -62,7 +62,7 @@ SOCIAL_AUTH_STRATEGY = 'social.strategies.django_strategy.DjangoStrategy'
 SOCIAL_AUTH_STORAGE = 'social.apps.django_app.default.models.DjangoStorage'
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'CLIENT_ID'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "CLIENT_SECRET"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'CLIENT_SECRET'
 SOCIAL_AUTH_GOOGLE_OAUTH2_AUTH_EXTRA_ARGUMENTS = {'hd': 'andrew.cmu.edu'}
 
 MIDDLEWARE_CLASSES = (
@@ -108,3 +108,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+try:
+    from config.local_settings import *
+except ImportError:
+    pass
