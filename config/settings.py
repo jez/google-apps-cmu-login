@@ -56,7 +56,7 @@ AUTHENTICATION_BACKENDS = (
 AUTH_USER_MODEL = 'gappscmu.CustomUser'
 
 LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/done/'
+LOGIN_REDIRECT_URL = '/'
 URL_PATH = ''
 SOCIAL_AUTH_STRATEGY = 'social.strategies.django_strategy.DjangoStrategy'
 SOCIAL_AUTH_STORAGE = 'social.apps.django_app.default.models.DjangoStorage'
